@@ -32,8 +32,29 @@ console.log(suffixCipher('incremental progress is very instrumental', cipher2));
 *******************************************************************************/
 
 function suffixCipher(sentence, cipher) {
-  // Your code here 
+  // Your code here
 }
+let cipher1 = {
+  ly: function(word) {
+      return word.slice(0, -1) + 'ee';
+  },
+  ize: function(word) {
+      return word + 'r';
+  }
+};
+console.log(suffixCipher('quietly and gently visualize', cipher1));
+// quietlee and gentlee visualizer
+
+let cipher2 = {
+  tal: function(word) {
+      return word.toUpperCase();
+  },
+  s: function(word) {
+      return word + 'th';
+  }
+};
+console.log(suffixCipher('incremental progress is very instrumental', cipher2));
+// INCREMENTAL progressth isth very INSTRUMENTAL
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {

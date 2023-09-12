@@ -31,7 +31,7 @@ function mySome(array, cb) {
     }
     return false;
 }
-// THIS IS A PUSH TEST
+
 
 let result1 = mySome([5, 1, 7, 9], function(ele, i) {
     return ele === i;
